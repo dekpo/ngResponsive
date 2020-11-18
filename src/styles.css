@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://www.w3schools.com/w3css/4/w3.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+/* custom CSS */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+.bgimg1, .bgimg2{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+.bgimg1{
+  background-image: url('assets/new-york-2699520_640.jpg');
+}
+.bgimg2{
+  background-image: url('assets/taxi-cab-381233_640.jpg');
+}

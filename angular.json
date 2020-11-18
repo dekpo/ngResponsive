@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "ngResponsive"
+  "defaultProject": "ngResponsive",
+  "cli": {
+    "analytics": false
+  }
 }

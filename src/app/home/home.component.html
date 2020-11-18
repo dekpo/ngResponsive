@@ -1,0 +1,22 @@
+<div class="w3-display-container bgimg1 w3-animate-opacity">
+  <div class="w3-display-middle">
+    <span class="w3-center w3-padding-large w3-black w3-animate-right" style="white-space: nowrap;">WELCOME TO MY WEBSITE</span>
+  </div>
+</div>
+<div class="w3-container w3-padding w3-animate-left">
+  <h3 class="w3-center">ABOUT US</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis amet nam animi, hic voluptates, id alias fuga sit veniam, dicta magnam voluptatem. Dolores impedit, eum expedita tenetur eos totam quo.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit vero dolore dolorum, ab similique iure quidem eum amet, temporibus atque pariatur exercitationem porro harum ea. Ex ab nam ducimus.Dicta quos fuga architecto vel expedita ab. Architecto ducimus accusantium temporibus, qui, beatae culpa unde voluptas similique voluptate itaque vitae nostrum nesciunt at corrupti quam sequi! Beatae sint porro similique!</p>
+</div>
+<div class="w3-container w3-padding w3-animate-right">
+  <h3 class="w3-center">OUR TEAM</h3>
+  <ul class="w3-ul w3-border w3-card">
+
+    <li *ngFor="let person of team">
+      <img class="w3-left w3-circle w3-margin-right" src="../../assets/img_{{person.icon}}.png">
+      <span class="w3-large">{{person.firstname}} {{person.lastname}}</span><br>
+      <span>{{ person.status }}</span>
+    </li>
+
+  </ul>
+</div>
