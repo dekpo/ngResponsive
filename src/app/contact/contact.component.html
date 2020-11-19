@@ -1,0 +1,38 @@
+<div class="w3-display-container bgimg1 w3-animate-opacity">
+  <div class="w3-display-middle">
+    <span class="w3-center w3-padding-large w3-black w3-animate-right" style="white-space: nowrap;">WELCOME TO MY WEBSITE</span>
+  </div>
+</div>
+<div class="w3-container w3-padding w3-animate-left">
+  <h3 class="w3-center">CONTACT US</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis amet nam animi, hic voluptates, id alias fuga sit veniam, dicta magnam voluptatem. Dolores impedit, eum expedita tenetur eos totam quo.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit vero dolore dolorum, ab similique iure quidem eum amet, temporibus atque pariatur exercitationem porro harum ea. Ex ab nam ducimus.Dicta quos fuga architecto vel expedita ab. Architecto ducimus accusantium temporibus, qui, beatae culpa unde voluptas similique voluptate itaque vitae nostrum nesciunt at corrupti quam sequi! Beatae sint porro similique!</p>
+</div>
+<div class="w3-container w3-padding w3-animate-right">
+  <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+    <p>
+      <label>First Name:</label><br>
+      <input type="text" name="firstname"
+      [(ngModel)]="firstname" required>
+    </p>
+    <p>
+      <label>Last Name:</label><br>
+      <input type="text" name="lastname"
+      [(ngModel)]="lastname" required>
+    </p>
+    <p>
+      <label>Email:</label><br>
+      <input type="text" name="email"
+      [(ngModel)]="email" required>
+    </p>
+    <p>
+      <label>Message:</label><br>
+      <textarea name="message"
+      [(ngModel)]="message">
+      </textarea>
+    </p>
+    <p>
+      <button type="submit" [disabled]="!myForm.valid">Submit</button>
+    </p>
+  </form>
+</div>
