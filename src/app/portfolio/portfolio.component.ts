@@ -85,7 +85,7 @@ export class PortfolioComponent implements OnInit {
     for (let i = 0; i < this.portfolio.length; i += this.nbItems){
       this.arrayCols.push( this.portfolio.slice(i, i + this.nbItems) );
     }
-    console.log( this.arrayCols );
+    console.log('Array for Columns:',this.arrayCols );
   }
 
   toggleModal(id = 0): void{

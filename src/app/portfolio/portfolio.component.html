@@ -8,7 +8,7 @@
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iste atque recusandae dolorem tenetur amet, autem error voluptate rem eos soluta aspernatur consequuntur hic nostrum?</p>
   <div class="w3-row" *ngFor="let col of arrayCols">
     <div class="w3-container w3-quarter" *ngFor="let img of col; let i = index">
-      <img src="../../assets/{{img.src}}.jpg" class="w3-hover-opacity" alt="{{img.alt}}" (click)="toggleModal( img.id )">
+      <img src="assets/{{img.src}}.jpg" class="w3-hover-opacity" alt="{{img.alt}}" (click)="toggleModal( img.id )">
       <em class="w3-block w3-center">{{img.title}}</em>
     </div>
   </div>
@@ -18,7 +18,7 @@
   <span class="w3-button w3-large w3-display-topright"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-center w3-black w3-animate-zoom w3-display-topcenter">
     <h2>{{modalTitle}}</h2>
-    <img class="w3-image" src="../../assets/{{modalSrc}}.jpg">
+    <img class="w3-image" *ngIf="modalSrc" src="assets/{{modalSrc}}.jpg">
     <p>{{modalCaption}}</p>
   </div>
 </div>
