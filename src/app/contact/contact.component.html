@@ -13,17 +13,29 @@
     <p>
       <label>First Name:</label><br>
       <input type="text" name="firstname"
-      [(ngModel)]="firstname" required>
+      [(ngModel)]="firstName" required>
     </p>
     <p>
       <label>Last Name:</label><br>
       <input type="text" name="lastname"
-      [(ngModel)]="lastname" required>
+      [(ngModel)]="lastName" required>
     </p>
     <p>
       <label>Email:</label><br>
       <input type="text" name="email"
       [(ngModel)]="email" required>
+    </p>
+    <p>
+      <label>Company:</label><br>
+      <select name="company_id" [(ngModel)]="company_id" required>
+        <option value="">Choose please</option>
+        <option *ngFor="let item of companies" [value]="item._id">{{ item.name }}</option>
+      </select>
+    </p>
+    <p>
+      <label>Phone:</label><br>
+      <input type="text" name="phone"
+      [(ngModel)]="phone" required>
     </p>
     <p>
       <label>Message:</label><br>
